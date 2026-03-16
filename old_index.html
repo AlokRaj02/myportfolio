@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Raj | Software Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Decorative Elements -->
+    <div class="bg-shape shape-bl"></div>
+    <div class="bg-shape shape-tr"></div>
+
+    <!-- Theme Toggle -->
+    <button id="theme-btn" class="floating-btn theme-toggle glass-fx" aria-label="Toggle Dark/Light Mode">
+        <i class="fas fa-sun light-icon"></i>
+        <i class="fas fa-moon dark-icon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <header class="navbar glass-fx" id="navbar">
+        <div class="nav-container container">
+            <a href="#hero" class="logo">Alok<span class="accent">.</span></a>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link btn-contact">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container hero-content">
+                <div class="hero-text reveal reveal-left">
+                    <p class="greeting">Hi, I'm</p>
+                    <h1 class="name">Alok Raj</h1>
+                    <h2 class="title">Software Developer</h2>
+                    <p class="tagline">I build robust web applications and solve complex problems with clean, efficient code.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    </div>
+                    <div class="social-links mt-lg">
+                        <a href="#" class="social-icon glass-fx" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon glass-fx" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:contact@example.com" class="social-icon glass-fx" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-right">
+                    <div class="img-container glass-fx">
+                        <!-- Placeholder for Profile Image -->
+                        <div class="img-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content glass-card reveal reveal-up">
+                    <div class="about-text">
+                        <h3>Crafting Digital Solutions</h3>
+                        <p>I am a dedicated Software Developer with a strong foundation in modern web technologies and C++ programming. I specialize in building efficient, scalable, and user-centric applications.</p>
+                        <p>Driven by continuous learning, I enjoy tackling complex algorithmic challenges across competitive programming platforms and pushing the boundaries of what code can achieve. I believe in writing clean, maintainable code and building intuitive user experiences.</p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap highlight-icon text-accent"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>B.Tech Computer Science, LPU</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-laptop-code highlight-icon text-accent"></i>
+                                <div>
+                                    <h4>Experience</h4>
+                                    <p>Full-Stack Web Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-category glass-card reveal reveal-scale">
+                        <div class="category-header">
+                            <i class="fab fa-react category-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>HTML / CSS</span><span>90%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>React.js</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category glass-card reveal reveal-scale" style="transition-delay: 100ms;">
+                        <div class="category-header">
+                            <i class="fas fa-server category-icon"></i>
+                            <h3>Backend & Core</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>C / C++</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Node.js / Express</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>PHP</span><span>75%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & Tools -->
+                    <div class="skill-category glass-card reveal reveal-scale" style="transition-delay: 200ms;">
+                        <div class="category-header">
+                            <i class="fas fa-database category-icon"></i>
+                            <h3>Database & Tools</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>MySQL / MongoDB</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Git / GitHub</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Linux / Bash</span><span>75%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card reveal reveal-up">
+                        <div class="project-img bg-gradient-1">
+                            <i class="fas fa-store fa-3x outline-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>ClothHub</h3>
+                            <p class="project-desc">A responsive clothing store and inventory management platform with secure user authentication, inventory tracking, and real-time data management.</p>
+                            <div class="tech-stack">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Tailwind</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Repository</a>
+                                <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card reveal reveal-up" style="transition-delay: 100ms;">
+                        <div class="project-img bg-gradient-2">
+                            <i class="fas fa-vote-yea fa-3x outline-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-VoteX</h3>
+                            <p class="project-desc">A secure, modern online voting platform featuring real-time poll result updates, robust backend APIs, and securely implemented vote casting logic.</p>
+                            <div class="tech-stack">
+                                <span class="tag">React.js</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Repository</a>
+                                <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <h2 class="section-title">Experience & Education</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline p-y">
+                    <div class="timeline-item reveal reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">August 2023 - Present</span>
+                            <h3>B.Tech Computer Science & Engineering</h3>
+                            <h4>Lovely Professional University</h4>
+                            <p>Focusing on core computer science subjects, algorithms, and full-stack web development. CGPA: 6.4</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Summer Training</span>
+                            <h3>Linux Server & System Management</h3>
+                            <h4>Certification Program</h4>
+                            <p>Hands-on experience with shell scripting, service management, package installation, and troubleshooting in Linux environments.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Nov 2024</span>
+                            <h3>Hackathon Participant</h3>
+                            <h4>National Level Hackathon</h4>
+                            <p>Collaborated with a team to build an innovative digital solution within 48 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info glass-card reveal reveal-left">
+                        <h3>Let's Connect</h3>
+                        <p>I'm currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="icon-box glass-fx">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>India</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-box glass-fx">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>kanuj378733@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-card reveal reveal-right">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" class="form-control" placeholder="Hello..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Alok Raj. Built with <i class="fas fa-heart text-accent"></i> & Modern UI.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

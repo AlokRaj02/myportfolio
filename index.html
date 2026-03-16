@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Raj | Portfolio</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="glow-bg top-left"></div>
+    <div class="glow-bg bottom-right"></div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container main-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">&lt;Alok <span class="text-gradient">Raj</span> /&gt;</span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-hire">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="main-container hero-grid">
+                <!-- Left side -->
+                <div class="hero-content reveal reveal-left">
+                    <p class="greeting text-gradient">Hello there! <span class="wave">👋</span></p>
+                    <h1 class="hero-title">
+                        I'm <span class="text-white">Alok Raj</span>
+                    </h1>
+                    <div class="typewriter-container">
+                        <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description text-muted mt-4">
+                        An aspiring frontend developer dedicated to building exceptional digital experiences. Specialized in writing clean, scalable, and efficient code.
+                    </p>
+                    <div class="hero-actions mt-8">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="social-links mt-8">
+                        <a href="https://github.com/AlokRaj02" target="_blank" class="social-icon group" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alokraj1106" target="_blank" class="social-icon group" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:alokroy7631@gmail.com" class="social-icon group" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right side -->
+                <div class="hero-visual reveal reveal-right">
+                    <div class="profile-container glass-panel">
+                        <div class="profile-glow"></div>
+                        <!-- Profile Image -->
+                        <div class="profile-image relative group overflow-hidden">
+                            <img src="profile.jpg" alt="Alok Raj" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <!-- Overlay effect on hover -->
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-1 glass-panel">
+                            <i class="fab fa-react" style="color: #61DAFB;"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="floating-badge badge-2 glass-panel">
+                            <i class="fab fa-js" style="color: #F7DF1E;"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="floating-badge badge-3 glass-panel">
+                            <i class="fas fa-database" style="color: #4DB33D;"></i>
+                            <span>Database</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section relative overflow-hidden">
+            <div class="about-glow"></div>
+            <div class="main-container">
+                <div class="section-header reveal reveal-up">
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <p class="section-subtitle">Get to know the developer behind the code.</p>
+                </div>
+
+                <div class="about-grid mt-12">
+                    <!-- Fake code editor snippet -->
+                    <div class="code-editor glass-panel reveal reveal-left float-anim">
+                        <div class="editor-header">
+                            <div class="mac-buttons">
+                                <span class="mac-btn close"></span>
+                                <span class="mac-btn minimize"></span>
+                                <span class="mac-btn maximize"></span>
+                            </div>
+                            <span class="file-name">developer.json</span>
+                        </div>
+                        <div class="editor-content">
+<pre><code><span class="keyword">const</span> <span class="variable">developer</span> <span class="operator">=</span> {
+  <span class="property">name</span>: <span class="string">"Alok Raj"</span>,
+  <span class="property">role</span>: <span class="string">"Full Stack Developer"</span>,
+  <span class="property">focus</span>: [
+    <span class="string">"Web Development"</span>,
+    <span class="string">"AI Tools"</span>,
+    <span class="string">"Problem Solving"</span>
+  ],
+  <span class="property">passion</span>: <span class="string">"Building intelligent web applications"</span>
+};</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="about-text reveal reveal-right">
+                        <div class="developer-story-header mb-6">
+                            <div class="story-icon glass-icon mb-4">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white">The <span class="text-gradient">Developer Story</span></h3>
+                        </div>
+                        
+                        <div class="story-content text-left space-y-6">
+                            <p class="text-muted leading-relaxed reveal reveal-up" style="transition-delay: 100ms;">
+                                My journey into technology started with a simple curiosity, how websites actually work behind the scenes. What began as exploring basic web pages soon turned into a deep interest in understanding the complete flow of web applications from designing natural user interfaces to building the backend systems that power them. This curiosity naturally led me toward <span class="text-primary font-bold">Full Stack Web Development</span>, where I enjoy working across both frontend and backend to create meaningful digital experiences.
+                            </p>
+                            <p class="text-muted leading-relaxed reveal reveal-up" style="transition-delay: 300ms;">
+                                As a Computer Science student, I continuously explore modern technologies such as <span class="text-white font-bold">HTML, CSS, JavaScript, React, Node.js,</span> and <span class="text-primary font-bold">Python</span>, focusing on how different components of a system connect and function together. I am particularly interested in building scalable web platforms and integrating intelligent features like <span class="text-white font-bold">AI-powered tools and automation</span>.
+                            </p>
+                            <p class="text-muted leading-relaxed reveal reveal-up" style="transition-delay: 500ms;">
+                                Driven by curiosity and continuous learning, I aim to strengthen my foundations in <span class="text-white font-bold">software engineering and system design</span> while building impactful projects that demonstrate both creativity and technical depth.
+                            </p>
+                        </div>
+
+                        <!-- Stats Grid -->
+                        <div class="stats-grid mt-10">
+                            <div class="stat-card glass-panel">
+                                <span class="stat-number text-gradient" data-target="10">10+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-card glass-panel">
+                                <span class="stat-number text-gradient" data-target="1">1+</span>
+                                <span class="stat-label">Years Learning</span>
+                            </div>
+                            <div class="stat-card glass-panel">
+                                <span class="stat-number text-gradient" data-target="100">100+</span>
+                                <span class="stat-label">Commits</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section relative">
+            <div class="main-container">
+                <div class="section-header text-center reveal reveal-up">
+                    <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+                    <p class="section-subtitle text-center mx-auto">Technologies I work with to bring projects to life.</p>
+                </div>
+
+                <div class="skills-filter mt-10 reveal reveal-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                </div>
+
+                <div class="skills-grid mt-12" id="skillsGrid">
+                    <!-- HTML -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="frontend">
+                        <i class="fab fa-html5 skill-icon" style="color: #E34F26;"></i>
+                        <h4 class="skill-name">HTML5</h4>
+                    </div>
+                    <!-- CSS -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="frontend" style="transition-delay: 50ms;">
+                        <i class="fab fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                        <h4 class="skill-name">CSS3</h4>
+                    </div>
+                    <!-- JS -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="frontend backend" style="transition-delay: 100ms;">
+                        <i class="fab fa-js skill-icon" style="color: #F7DF1E;"></i>
+                        <h4 class="skill-name">JavaScript</h4>
+                    </div>
+                    <!-- React -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="frontend" style="transition-delay: 150ms;">
+                        <i class="fab fa-react skill-icon" style="color: #61DAFB;"></i>
+                        <h4 class="skill-name">React JS</h4>
+                    </div>
+                    <!-- Node -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="backend" style="transition-delay: 200ms;">
+                        <i class="fab fa-node-js skill-icon" style="color: #339933;"></i>
+                        <h4 class="skill-name">Node JS</h4>
+                    </div>
+                    <!-- DB -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="backend" style="transition-delay: 250ms;">
+                        <i class="fas fa-database skill-icon" style="color: #4DB33D;"></i>
+                        <h4 class="skill-name">MongoDB/SQL</h4>
+                    </div>
+                     <!-- Git -->
+                     <div class="skill-card glass-panel reveal reveal-scale" data-category="tools" style="transition-delay: 300ms;">
+                        <i class="fab fa-git-alt skill-icon" style="color: #F05032;"></i>
+                        <h4 class="skill-name">Git</h4>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="tools" style="transition-delay: 350ms;">
+                        <i class="fab fa-github skill-icon" style="color: #ffffff;"></i>
+                        <h4 class="skill-name">GitHub</h4>
+                    </div>
+                    <!-- VS Code -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="tools" style="transition-delay: 400ms;">
+                        <i class="fas fa-code skill-icon" style="color: #007ACC;"></i>
+                        <h4 class="skill-name">VS Code</h4>
+                    </div>
+                    <!-- Postman -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="tools" style="transition-delay: 450ms;">
+                        <i class="fas fa-rocket skill-icon" style="color: #FF6C37;"></i>
+                        <h4 class="skill-name">Postman</h4>
+                    </div>
+                    <!-- Canva -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="tools" style="transition-delay: 500ms;">
+                        <i class="fas fa-palette skill-icon" style="color: #00C4CC;"></i>
+                        <h4 class="skill-name">Canva</h4>
+                    </div>
+                    <!-- Figma -->
+                    <div class="skill-card glass-panel reveal reveal-scale" data-category="tools" style="transition-delay: 550ms;">
+                        <i class="fab fa-figma skill-icon" style="color: #F24E1E;"></i>
+                        <h4 class="skill-name">Figma</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="main-container">
+                <div class="section-header text-center reveal reveal-up">
+                    <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+                    <p class="section-subtitle">Academic journey and qualifications.</p>
+                </div>
+                
+                <div class="timeline mt-12">
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date text-gradient">2023 - 2027</span>
+                            <h3 class="text-xl font-bold">Bachelor of Technology (CSE)</h3>
+                            <p class="text-muted">Lovely Professional University (LPU)</p>
+                            <p class="mt-2 text-sm">Focused on Web Development, Algorithms, and Software Engineering.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item reveal reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date text-gradient">2021 - 2023</span>
+                            <h3 class="text-xl font-bold">Higher Secondary Education</h3>
+                            <p class="text-muted">Eklavya Central Public School</p>
+                            <p class="mt-2 text-sm">Focused on Physics, Chemistry, and Mathematics (PCM).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="main-container">
+                <div class="section-header text-center reveal reveal-up">
+                    <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
+                    <p class="section-subtitle">My professional journey so far.</p>
+                </div>
+
+                <div class="timeline mt-12">
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date text-gradient">Jun 2024 - Present</span>
+                            <h3 class="text-xl font-bold">Frontend Developer Intern</h3>
+                            <p class="text-muted">Tech Solutions Inc.</p>
+                            <ul class="mt-3 text-sm space-y-2">
+                                <li><i class="fas fa-arrow-right text-xs text-primary mr-2"></i> Developed responsive UI components using React and Tailwind.</li>
+                                <li><i class="fas fa-arrow-right text-xs text-primary mr-2"></i> Collaborated with backend team to integrate APIs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="main-container">
+                <div class="section-header text-center mx-auto reveal reveal-up">
+                    <h2 class="section-title">Awesome <span class="text-gradient">Projects</span></h2>
+                    <p class="section-subtitle">Some of my recent work bridging logic and UI.</p>
+                </div>
+
+                <div class="projects-grid mt-12">
+                     <!-- Project 1: Dev_Orbit (AITutor Hub) -->
+                     <div class="project-card glass-panel reveal reveal-up">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-brand">
+                                <i class="fas fa-robot fa-3x text-white/50"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Dev_Orbit (AITutor Hub)</h3>
+                            <p class="project-desc text-muted">An AI-powered learning platform for AI/ML concepts, featuring a Gemini-integrated chatbot assistant and interactive curriculum.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Gemini API</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="project-links mt-6">
+                                <a href="https://dev-orbit-orcin.vercel.app/" target="_blank" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/shahanwajkhan/Dev_Orbit" target="_blank" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: University Management System -->
+                    <div class="project-card glass-panel reveal reveal-up" style="transition-delay: 100ms;">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-secondary">
+                                <i class="fas fa-university fa-3x text-white/50"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">University Management System</h3>
+                            <p class="project-desc text-muted">A comprehensive campus management platform streamlining student records, faculty administration, and paperless operations.</p>
+                            <div class="project-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links mt-6">
+                                <a href="https://ums-project.vercel.app/" target="_blank" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/shahanwajkhan/University-Management-System" target="_blank" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Donation Platform -->
+                    <div class="project-card glass-panel reveal reveal-up" style="transition-delay: 200ms;">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-accent">
+                                <i class="fas fa-hand-holding-heart fa-3x text-white/50"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Donation Platform</h3>
+                            <p class="project-desc text-muted">A full-stack charitable donation platform featuring secure JWT authentication, Stripe payment integration, and an admin dashboard.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Stripe</span>
+                            </div>
+                            <div class="project-links mt-6">
+                                <a href="https://donation-platform-gv4x.vercel.app/" target="_blank" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Vishal3842kumar/donation-platform" target="_blank" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Traffic Management System -->
+                    <div class="project-card glass-panel reveal reveal-up" style="transition-delay: 300ms;">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-secondary">
+                                <i class="fas fa-traffic-light fa-3x text-white/50"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Traffic Management System</h3>
+                            <p class="project-desc text-muted">A smart city dashboard for real-time traffic monitoring, analytics, and personnel management with a focus on data-driven urban mobility.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <div class="project-links mt-6">
+                                <a href="https://traffic-lime-rho.vercel.app/" target="_blank" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/shahanwajkhan/Traffic-Management-System" target="_blank" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Cricket Management System -->
+                    <div class="project-card glass-panel reveal reveal-up" style="transition-delay: 400ms;">
+                        <div class="project-image-wrapper">
+                            <div class="project-placeholder bg-gradient-brand">
+                                <i class="fas fa-baseball-ball fa-3x text-white/50"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Cricket Hub (CMS)</h3>
+                            <p class="project-desc text-muted">A full-stack sports platform featuring real-time Match scoring, AI-powered performance predictions, and a YouTube-style live chat system.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Socket.IO</span>
+                                <span class="tag">Gemini AI</span>
+                            </div>
+                            <div class="project-links mt-6">
+                                <a href="https://cricket-hub-y63h.vercel.app/" target="_blank" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/shahanwajkhan/Cricket-Management-System" target="_blank" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section">
+            <div class="main-container">
+                <div class="section-header text-center reveal reveal-up">
+                    <h2 class="section-title">My <span class="text-gradient">Certifications</span></h2>
+                    <p class="section-subtitle">Validation of my technical expertise.</p>
+                </div>
+
+                <div class="certs-list mt-12">
+                    <!-- Cert 1 -->
+                    <div class="cert-list-item glass-panel reveal reveal-left">
+                        <div class="cert-main-info">
+                            <div class="cert-icon-box">
+                                <i class="fas fa-brain" style="color: #4facfe;"></i>
+                            </div>
+                            <div class="cert-text-content">
+                                <h3>Generative AI Apps and Technologies</h3>
+                                <p>Infosys Springboard</p>
+                            </div>
+                        </div>
+                        <div class="cert-action">
+                            <a href="https://drive.google.com/file/d/1tWHjQQinxT8mKwhs8E1aCBH4_SN9FwDN/view?usp=sharing" target="_blank" class="btn-cert-view">
+                                View Credential <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Cert 2 -->
+                    <div class="cert-list-item glass-panel reveal reveal-left" style="transition-delay: 100ms;">
+                        <div class="cert-main-info">
+                            <div class="cert-icon-box">
+                                <i class="fab fa-java" style="color: #f89820;"></i>
+                            </div>
+                            <div class="cert-text-content">
+                                <h3>Java Programming</h3>
+                                <p>iamneo / LPU</p>
+                            </div>
+                        </div>
+                        <div class="cert-action">
+                            <a href="https://drive.google.com/file/d/1lorI136w5D2ldwIpH0d8O8f24MzrkwfV/view?usp=sharing" target="_blank" class="btn-cert-view">
+                                View Credential <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-list-item glass-panel reveal reveal-left" style="transition-delay: 200ms;">
+                        <div class="cert-main-info">
+                            <div class="cert-icon-box">
+                                <i class="fas fa-code" style="color: #00b4d8;"></i>
+                            </div>
+                            <div class="cert-text-content">
+                                <h3>Data Structures and Algorithms using C++</h3>
+                                <p>Centre for Professional Enhancement (CPE)</p>
+                            </div>
+                        </div>
+                        <div class="cert-action">
+                            <a href="https://drive.google.com/file/d/1aOUjftk5KzC-kpnhQ_dISr1kJF1Sz5KQ/view?usp=sharing" target="_blank" class="btn-cert-view">
+                                View Credential <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-list-item glass-panel reveal reveal-left" style="transition-delay: 300ms;">
+                        <div class="cert-main-info">
+                            <div class="cert-icon-box">
+                                <i class="fas fa-robot" style="color: #a855f7;"></i>
+                            </div>
+                            <div class="cert-text-content">
+                                <h3>ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM</h3>
+                                <p>Infosys Springboard</p>
+                            </div>
+                        </div>
+                        <div class="cert-action">
+                            <a href="https://drive.google.com/file/d/1WZ2Dvvdc_9WtggcgH4S47O-Vb510j7yI/view?usp=sharing" target="_blank" class="btn-cert-view">
+                                View Credential <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="cert-list-item glass-panel reveal reveal-left" style="transition-delay: 400ms;">
+                        <div class="cert-main-info">
+                            <div class="cert-icon-box">
+                                <i class="fas fa-laptop-code" style="color: #f43f5e;"></i>
+                            </div>
+                            <div class="cert-text-content">
+                                <h3>DSA with C++ (Merit)</h3>
+                                <p>LPU - Computer Science</p>
+                            </div>
+                        </div>
+                        <div class="cert-action">
+                            <a href="https://drive.google.com/file/d/1zbG83ktfxX0zBhqgt48vC2YMeai0q2_g/view?usp=sharing" target="_blank" class="btn-cert-view">
+                                View Credential <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <div class="main-container">
+                <div class="section-header text-center reveal reveal-up">
+                    <span class="badge mb-2">MILESTONES</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <p class="section-subtitle">Milestones, problem solving, and community contributions.</p>
+                </div>
+
+                <!-- Milestone Stats Grid -->
+                <div class="milestone-stats-grid mt-12 mb-16">
+                    <div class="stat-card glass-panel reveal reveal-scale">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">DSA PROBLEMS</span>
+                    </div>
+                    <div class="stat-card glass-panel reveal reveal-scale" style="transition-delay: 100ms;">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">PROJECTS BUILT</span>
+                    </div>
+                    <div class="stat-card glass-panel reveal reveal-scale" style="transition-delay: 200ms;">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">CERTIFICATIONS</span>
+                    </div>
+                    <div class="stat-card glass-panel reveal reveal-scale" style="transition-delay: 300ms;">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">HACKATHONS</span>
+                    </div>
+                </div>
+
+                <!-- Detailed Achievement List -->
+                <div class="achievement-list mt-12">
+                    <!-- Achievement 1 -->
+                    <div class="achievement-list-item glass-panel reveal reveal-up">
+                        <div class="achievement-icon-wrapper">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <div class="achievement-header">
+                                <h3 class="achievement-item-title">Coding Practice</h3>
+                                <span class="achievement-tag coding">CODING</span>
+                            </div>
+                            <p class="achievement-item-desc">Solved 150+ coding problems across platforms like LeetCode, HackerRank, and GeeksforGeeks, strengthening problem-solving skills, algorithms, and data structures knowledge.</p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievement-list-item glass-panel reveal reveal-up" style="transition-delay: 100ms;">
+                        <div class="achievement-icon-wrapper">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <div class="achievement-header">
+                                <h3 class="achievement-item-title">Hackathon Achievement</h3>
+                                <div class="achievement-actions">
+                                    <span class="achievement-tag hackathon">HACKATHON</span>
+                                    <a href="#" class="achievement-link">Certificate <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <p class="achievement-item-desc">Secured Runner-Up position in a college-level Hackathon, demonstrating strong problem-solving ability, teamwork, and the capability to build a functional solution under strict time constraints.</p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievement-list-item glass-panel reveal reveal-up" style="transition-delay: 200ms;">
+                        <div class="achievement-icon-wrapper">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <div class="achievement-header">
+                                <h3 class="achievement-item-title">Technical Event Volunteer</h3>
+                                <span class="achievement-tag community">TECH COMMUNITY</span>
+                            </div>
+                            <p class="achievement-item-desc">Contributed as a student volunteer in organizing technical events and workshops, helping coordinate activities, manage sessions, and support knowledge sharing within the student community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="main-container">
+                <div class="contact-grid">
+                    <!-- Left info -->
+                    <div class="contact-info reveal reveal-left">
+                        <h2 class="section-title">Let's Work <span class="text-gradient">Together</span></h2>
+                        <p class="text-muted mt-4 mb-8">
+                            I am currently open for full-time roles and freelance projects. Let's discuss how my skills can contribute to your success.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method glass-panel">
+                                <div class="icon-wrapper glass-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="details">
+                                    <span class="label">Email</span>
+                                    <a href="mailto:alokroy7631@gmail.com" class="value">alokroy7631@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method glass-panel mt-4">
+                                <div class="icon-wrapper glass-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="details">
+                                    <span class="label">Location</span>
+                                    <span class="value">India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right form -->
+                    <div class="contact-form-wrapper glass-panel reveal reveal-right">
+                        <h3 class="text-xl font-bold text-white mb-6">Send Me a Message</h3>
+                        <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="5ead582e-3387-4272-a8e2-7d550e318ec7">
+                            <input type="hidden" name="subject" value="New Portfolio Message from Alok Raj">
+                            <input type="hidden" name="from_name" value="Alok's Portfolio">
+                            
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" placeholder="How can I help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full mt-4">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="main-container text-center">
+            <a href="#home" class="logo mb-4 inline-block">
+                <span class="logo-text">&lt;Alok <span class="text-gradient">Raj</span> /&gt;</span>
+            </a>
+            <p class="text-muted text-sm">&copy; 2026 Alok Raj. Designed & Built with Modern UI.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
