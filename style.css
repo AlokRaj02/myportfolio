@@ -810,62 +810,25 @@ ul {
 
 .project-image-wrapper {
     width: 100%;
-    height: 240px;
-    position: relative;
+    height: 200px;
     overflow: hidden;
 }
 
-.project-img {
+.project-placeholder {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.4) 50%, transparent 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
-.overlay-content {
-    transform: translateY(20px);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.view-project {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius-full);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.85rem;
-}
-
-.project-card:hover .project-img {
-    transform: scale(1.15);
-}
-
-.project-card:hover .project-overlay {
-    opacity: 1;
-}
-
-.project-card:hover .overlay-content {
-    transform: translateY(0);
+.project-card:hover .project-placeholder {
+    transform: scale(1.05);
 }
 
 .bg-gradient-brand { background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); }
 .bg-gradient-secondary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-.bg-gradient-accent { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
 
 .project-info {
     padding: 1.5rem;
