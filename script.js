@@ -236,4 +236,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    /* --- 9. Light/Dark Theme Toggle --- */
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+
+    // Check for saved theme preference in localStorage
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (themeIcon) {
+            if (currentTheme === 'light') {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+        }
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            let targetTheme = 'light';
+            
+            // Toggle logic
+            if (document.documentElement.getAttribute('data-theme') === 'light') {
+                targetTheme = 'dark'; // Assuming dark is default without attribute
+                document.documentElement.removeAttribute('data-theme');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+            
+            // Save preference
+            localStorage.setItem('theme', targetTheme);
+        });
+    }
+
 });
