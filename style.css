@@ -1407,3 +1407,109 @@ ul {
     }
 }
 
+/* --- TRAINING SECTION REDESIGN --- */
+.training-wide-card {
+    padding: 3rem;
+    position: relative;
+    background: rgba(17, 24, 39, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.premium-border {
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.05);
+}
+
+.training-badge {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.training-meta {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.meta-separator {
+    opacity: 0.3;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.training-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.training-item-box {
+    padding: 1.5rem;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: all 0.4s ease;
+}
+
+.training-item-box:hover {
+    background: rgba(59, 130, 246, 0.05);
+    border-color: rgba(59, 130, 246, 0.3);
+    transform: translateY(-5px);
+}
+
+.box-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.training-item-box:hover .box-icon {
+    background: var(--primary);
+    color: var(--text-white);
+    transform: rotateY(360deg);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.training-item-box h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-white);
+}
+
+.training-item-box p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .training-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .meta-separator {
+        display: none;
+    }
+    .training-wide-card {
+        padding: 2rem;
+    }
+}
