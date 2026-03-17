@@ -205,4 +205,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* --- 7. Magnetic Button Effect --- */
+    const magneticBtns = document.querySelectorAll('.btn-primary, .btn-hire, .btn-icon');
+    
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', function(e) {
+            const position = btn.getBoundingClientRect();
+            const x = e.pageX - position.left - position.width / 2;
+            const y = e.pageY - position.top - position.height / 2 - window.scrollY;
+            
+            btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
+        
+        btn.addEventListener('mouseout', function() {
+            btn.style.transform = 'translate(0px, 0px)';
+        });
+    });
+
+    /* --- 8. Dynamic Card Glow Effect --- */
+    const glassPanels = document.querySelectorAll('.glass-panel');
+    
+    glassPanels.forEach(panel => {
+        panel.addEventListener('mousemove', e => {
+            const rect = panel.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            panel.style.setProperty('--mouse-x', `${x}px`);
+            panel.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+
 });
