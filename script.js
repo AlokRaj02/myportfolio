@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /* --- 1. Typewriter Effect --- */
-    const texts = ["Aspiring Full Stack Developer", "Backend Developer", "Frontend Developer", ""];
+    const texts = ["Aspiring Full Stack Developer", "Aspiring Backend Developer", "Aspiring Frontend Developer", ""];
     let count = 0;
     let index = 0;
     let currentText = "";
@@ -155,12 +155,12 @@ document.addEventListener('DOMContentLoaded', () => {
     /* --- 6. Web3Forms Submission --- */
     const form = document.getElementById('contactForm');
     if (form) {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const btn = form.querySelector('button');
             const originalText = btn.innerHTML;
-            
+
             btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin ml-2"></i>';
             btn.style.opacity = '0.8';
             btn.disabled = true;
@@ -177,31 +177,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 body: json
             })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    btn.innerHTML = 'Message Sent! <i class="fas fa-check ml-2"></i>';
-                    btn.style.background = '#10b981'; // Success green
-                    form.reset();
-                } else {
-                    console.log(response);
-                    btn.innerHTML = 'Error! Try again <i class="fas fa-exclamation-triangle ml-2"></i>';
-                    btn.style.background = '#ef4444'; // Error red
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                btn.innerHTML = 'Network Error <i class="fas fa-wifi ml-2"></i>';
-                btn.style.background = '#ef4444';
-            })
-            .then(() => {
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                    btn.style.opacity = '1';
-                    btn.disabled = false;
-                }, 4000);
-            });
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        btn.innerHTML = 'Message Sent! <i class="fas fa-check ml-2"></i>';
+                        btn.style.background = '#10b981'; // Success green
+                        form.reset();
+                    } else {
+                        console.log(response);
+                        btn.innerHTML = 'Error! Try again <i class="fas fa-exclamation-triangle ml-2"></i>';
+                        btn.style.background = '#ef4444'; // Error red
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    btn.innerHTML = 'Network Error <i class="fas fa-wifi ml-2"></i>';
+                    btn.style.background = '#ef4444';
+                })
+                .then(() => {
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.background = '';
+                        btn.style.opacity = '1';
+                        btn.disabled = false;
+                    }, 4000);
+                });
         });
     }
 
